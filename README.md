@@ -3,8 +3,12 @@ This repo/script is for reporting IPs from a CSV input file to https://www.abuse
 
 ## Setup
 * git clone https://github.com/thenecroscope/ps-abuseipreporter.git  
+
+These commands are option, just to prevent files being sent up to git
 * git update-index --assume-unchanged configs/config.csv
-  
+* git update-index --assume-unchanged source/ips.csv (only if you want IPs to be reported to the API, see below)
+* git update-index --assume-unchanged source/ipstocheck.csv (only if you want IPs to be checked, see below)
+
 Enter your IPs in the ips.csv file and enter your API key from ABUSEIPDB into the config.csv.  
 Note: The API will error if you try to report the same IP details again.
 
