@@ -8,7 +8,7 @@ This repo/script is for reporting IPs from a CSV input file to https://www.abuse
 Enter your IPs in the ips.csv file and enter your API key from ABUSEIPDB into the config.csv.  
 Note: The API will error if you try to report the same IP details again.
 
-### config.csv
+### ip.csv
 * IPTOBLOCK - IP address to block. Does not take subnets or ranges.
 * CATEGORIES - A comma seperated list of categories to report
 * Comments - Optional notes to help the community
@@ -19,3 +19,15 @@ https://www.abuseipdb.com/user/XXXXX
 
 ## List of Categories
 https://www.abuseipdb.com/categories
+
+
+# ps-abuseipchecker
+This script checks to see if the IP address is on the abduse list. It reports which country the IP is from and how many times the IP has been reported in the last x days.
+
+## Usage
+Enter your IPs in the ipstocheck.csv file and enter your API key from ABUSEIPDB into the config.csv.  
+
+
+### ipstocheck.csv
+* IPTOCHECK - The single IP address to check
+* DAYS - Number of days back to check. Up to 30 days
